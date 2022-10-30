@@ -4,8 +4,9 @@ import Hero from "./components/Hero";
 import CreditCard from "./components/CreditCard";
 import CardList from "./components/CardList";
 import CenteredButton from "./components/CenteredButton";
-import "./App.scss";
 import Institutional from "./components/Institutional";
+import Faq from "./components/Faq";
+import "./App.scss";
 
 import posts from "./data/posts";
 
@@ -18,6 +19,7 @@ const App = () => (
        <CardList  posts={posts} />
        <CenteredButton>Abra sua conta</CenteredButton>
        <Institutional></Institutional>
+       <Faq></Faq>
     </div>
   );
 
