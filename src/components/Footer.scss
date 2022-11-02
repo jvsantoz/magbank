@@ -1,0 +1,13 @@
+@import "../variables";
+
+.footer{
+    border-bottom: 0.4rem solid $color-secondary;
+}
+
+.mb-5-mb-lg-0 {
+    margin:3rem 0;
+
+    @media screen and (min-width: 992px) {
+        margin: 0;
+    }
+}

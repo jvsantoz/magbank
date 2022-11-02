@@ -1,5 +1,15 @@
+@import '../_variables';
+
 .faq {
-    background-color: #443a50;
+    background-color: $color-faq-background;
+
+    div.card {
+        background-color: unset;
+
+        .card-header {
+            background-color: $color-faq-header;
+        }
+    }
 
     &-title {
         font-size: 2.2rem;
@@ -7,30 +17,21 @@
         line-height: 1.2;
         text-align: center;
 
-        @media screen and (min-width:902px) {
+        @media screen and (min-width: 992px) {
             font-size: 3.5rem;
         }
     }
 
-    &-icon-text {
-        cursor: pointer;
-    }
-}
+    .lead {
+        text-align: center;
 
-section div.faq-card {
-    background-color: unset;
-    
-    .card-header {
-        background-color: #362e4a;
-    }
-
-    .btn-link {
-        color: #fff;
-        text-decoration: none;
-        outline: unset;
-        
-        &:active {
-            color: #fff;
+        @media screen and (min-width: 992px) {
+            text-align: left;
         }
+    }
+
+
+    &-clickable {
+        cursor: pointer;
     }
 }
